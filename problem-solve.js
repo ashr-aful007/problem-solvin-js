@@ -323,7 +323,23 @@
 // const leapYearOrNot = leapYear(GivenYear);
 // console.log(leapYearOrNot)
 
-//18.problem arry even and odd number access
+//18.problem arry even and odd number sum
+
+// function getSumOfAnArry(numbers){
+
+//      for(let i = 0; i < myNumbers.length; i++){
+//           let index = i;
+//           console.log(index);
+//      }
+    
+// }
+
+
+
+
+// const myNumbers = [12, 65, 45, 78, 32, 45, 91];
+// getSumOfAnArry(myNumbers);
+
 
 
 
