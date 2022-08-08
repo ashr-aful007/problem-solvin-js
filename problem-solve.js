@@ -323,22 +323,42 @@
 // const leapYearOrNot = leapYear(GivenYear);
 // console.log(leapYearOrNot)
 
-//18.problem arry even and odd number sum
 
+//18.problem arry even and odd number sum
 // function getSumOfAnArry(numbers){
 
+//      sum = 0;
 //      for(let i = 0; i < myNumbers.length; i++){
 //           let index = i;
-//           console.log(index);
-//      }
-    
+//           let arryItems = myNumbers[index];
+//           sum = sum + arryItems;
+//           console.log(sum)
+//      }    
 // }
-
-
-
 
 // const myNumbers = [12, 65, 45, 78, 32, 45, 91];
 // getSumOfAnArry(myNumbers);
+
+//how to add arry odd number
+// function getOddNumbersOfArry(number){
+//      const oddNumber = [];
+//      for(let i =0; i<myNumbers.length; i++){
+//           const index = i;
+//           const element = number[index];
+//           if(element % 2 === 1){
+//                console.log(index, element)
+//                oddNumber.push(element);
+//           }
+//      }
+//      return oddNumber;
+     
+// }
+
+// const myNumbers = [12, 65, 45, 78, 32, 45, 91];
+// const oddNumber = getOddNumbersOfArry(myNumbers);
+// getSumOfAnArry(oddNumber)
+// const oddNumberSum = console.log(oddNumber);
+// console.log('odd number sum ', sum)
 
 
 
