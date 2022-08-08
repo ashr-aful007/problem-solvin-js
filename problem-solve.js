@@ -360,6 +360,62 @@
 // const oddNumberSum = console.log(oddNumber);
 // console.log('odd number sum ', sum)
 
+//20.multification in javascript factorial
+// function factorial(number){
+//     let result = 1;
+//      for(let i=1; i<=number; i++){
+//           result = result * i;
+//      }
+//      return result;
+// }
+
+// const result = factorial(9);
+// console.log(result)
+
+
+// 20.problem factorial reverse js
+// function factorial(number){
+//      let result =1;
+//      for(let i=number; i>=1 ; i--){
+//           result = result*i;
+//           console.log(i);         
+//      }
+//      return result;
+// }
+// const number = 6;
+// const fact = factorial(number);
+// console.log('factorial of 9:',number, fact);
+
+//factorial while js
+// function factorial(number){
+//      let num = 1;
+//      let result = 1;
+//      while(num <= 7){
+//           result = result * num;
+//           num++;
+
+//      }
+//      return result;
+// }
+// const givenNumber = 10;
+// const factorialAns = factorial(givenNumber);
+// console.log(factorialAns);
+
+//while loop reverse way
+// function factorial(number){
+//      let i= number;
+//      let result= 1;
+//      while(i>=1){
+//           result =result * i;
+//           i--;
+//      }
+//      return result;
+// }
+
+// const revFactorialNumber = 7;
+// const factorialNumber = factorial(revFactorialNumber);
+// console.log(factorialNumber);
+
 
 
 
