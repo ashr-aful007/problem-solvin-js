@@ -505,4 +505,55 @@
 // const tallest = maxArray(heights);
 // console.log(tallest)
 
-//write f
+//write a function to get min number
+// function minArry(numbers){
+//       let minNumber = numbers [0];
+//     for(let i =0; i <numbers.length; i++){
+//        const index = i;
+//        const element = numbers[index];
+//        if(element < minNumber){
+//            minNumber = element;
+//        }
+    
+//      }
+//     return minNumber;
+
+// }
+// const numbrsArry = [120, 110, 130, 140, 150]
+// const getMinNumber = minArry(numbrsArry);
+// console.log(getMinNumber)
+
+//23.problem reversd String  and join
+// function reverseString(text){
+//      const words = text.split(' ');
+//      let reversed =[];
+//      for(let i = words.length-1; i>= 0; i--){
+//           const element =words[i];
+//           reversed.push(element)
+//      }
+//      const rverseAdd = reversed.join(' ');
+//      return reversed;
+     
+// }
+
+// const myString = 'I am a good boy';
+// const reversed = reverseString(myString);
+// console.log('reversd output:', reversed)
+
+//24. if the number is divisible by 3 then instead of the number show 'foo'
+// for( let i =0; i<=50 ; i++){
+//       if(i % 3 ===0 && i % 5===0){
+//           console.log('foobar')
+//      }
+//      else if(i % 3 === 0){
+//           console.log('foo');
+//      }
+//      else if(i % 5 === 0){
+//           console.log('bar')
+//      }
+//      else{
+//           console.log(i)
+//      }
+
+// }
+
