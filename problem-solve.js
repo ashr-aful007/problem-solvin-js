@@ -416,8 +416,93 @@
 // const factorialNumber = factorial(revFactorialNumber);
 // console.log(factorialNumber);
 
+//21.problem find the large number
+// const jim = 84;
+// const dela = 75;
 
+// if(jim > dela){
+//      console.log('jim will get the cake');
+// }
+// else{
+//      console.log('dela will get the cake')
+// }
 
+//find large number out of three
 
+// const jim = 84;
+// const dela = 99;
+// const chinku = 77;
 
+// if(jim > dela && jim > chinku){
+//      console.log('jim will get the cake');
+// }
+// else if(dela > jim && dela > chinku){
+//      console.log('dela will get the cake')
+// }
+// else{
+//      console.log('chinku will get the cake')
+// }
 
+//min and max number use Math and write a function
+
+// function maxandMinNumber(number1, number2, number3){
+//      result = Math.max(number1, number2, number3)
+//      return result;
+// }
+
+// let number1 = 89;
+// let number2 = 79;
+// let number3 = 69;
+
+// const numberMinAndMax = maxandMinNumber(number1, number2, number3);
+// console.log(numberMinAndMax)
+
+//
+
+// function minNumber(number1, number2, number3 ){
+//      result = Math.min(number1, number2, number3);
+//      return result;
+// }
+
+// let number1 = 36;
+// let number2 = 100;
+// let number3 = 69;
+
+// const numberMin = minNumber(number1, number2, number3 );
+// console.log(numberMin);
+
+// min and max number if elase
+// let num1 = 120;
+// let num2 = 140;
+// let num3 = 150;
+
+// if(num1 > num2 && num1 > num3){
+//      console.log('num1 bigger then other number');
+// }
+// else if(num2 > num1 && num2 > num3 ){
+//      console.log('num2 bigger then other number');
+// }
+// else{
+//      console.log('num3 bigger then other number');
+// }
+
+//22.problem how to find max number in arry
+
+// function maxArray(numbers){
+//      let largest = numbers[0]
+//    for(let i= 0; i<numbers.length; i++){
+//      const index = i;
+//       const element = numbers[index];
+//       if(element > largest){
+//           largest = element;
+//       }
+//    }
+//    return largest;
+
+// }
+
+// const heights = [167, 170, 120, 165, 137];
+// const tallest = maxArray(heights);
+// console.log(tallest)
+
+//write f
