@@ -63,7 +63,7 @@ else if(number<=39 && number){
 
 }
 
-//7. problem solve epictively
+//7. problem solve another way
 var frinedScore = [85, 66, 95, 56, 40];
 var friendsName = ['tom', 'janne', 'peter', 'jhon'];
 
@@ -585,7 +585,7 @@ function isJavaScriptFile(String){
     //validation lowerCase and value store *string.
    let string = String.toLowerCase();
    //chack .js Extension  exist or not.
-   let checkString = String.includes('.js');
+   let checkString = String.endsWith('.js');
    if(checkString == true){
      return true;
    }
@@ -594,7 +594,7 @@ function isJavaScriptFile(String){
    }
 }
 
-let checkValue = isJavaScriptFile('hello.js');
+let checkValue = isJavaScriptFile('hello.js.jpg');
 // console.log(checkValue);
 
 
@@ -606,8 +606,8 @@ function oilPrice(diesel, petrol, octane){
      }
      // given data per litter price
      const perLitterDieselPrice = 114;
-     const perLitterPetrolPrice = 135;
-     const perLitterOctanePrice = 130;
+     const perLitterPetrolPrice = 130;
+     const perLitterOctanePrice = 135;
      //multiply quantity and price
      let dieselPrice = diesel * perLitterDieselPrice;
      let petrolPrice = petrol * perLitterPetrolPrice;
@@ -644,22 +644,57 @@ let candidatenumber = publicBusFare(235);
 //35.write a function for bestfriend or not
 function isBestFriend(FirstObject, secondObject){
      //validation case
-     if(FirstObject == 'number' ||  secondObject == 'number'){
-          return 'plase enter valid name'
-     }
+     // if(FirstObject.name == 'number' ||  secondObject.friend == 'number'){
+     //      return 'plase enter valid name'
+     // }
      //find same name in different key and compare. 
-     let findSameName = FirstObject.name.includes('Tom');
-     let findFriendName = secondObject.friend.includes('Tom'); 
+     let findSameName = FirstObject.name;
+     let findFriendName = secondObject.friend; 
+     let findSameName2 = FirstObject.friend;
+     let findFriendName2 = secondObject.name;
      
      if(findSameName == findFriendName){
+          return true;
+     }
+     else if(findSameName2 == findFriendName2){
           return true;
      }
      else{
           return false;
      } 
 }
-const FirstObject = {name:'Tom', friend:'Rock'};     
-const secondObject ={name:'Rock', friend: 'Tom'};
+const FirstObject = {name:'kabul', friend:'cabul'};     
+const secondObject ={name:'cabul', friend: 'khalik'};
 
 let isBestFriendOrNot = isBestFriend(FirstObject, secondObject);
 // console.log(isBestFriendOrNot);
+// console.log(isBestFriendOrNot);
+
+
+// cal factorial !4 = 24 
+function factorial(n){
+     //base case
+     if(n==0 || n==1){
+          return 1;
+     }else{
+          return n * factorial(n-1)
+     }
+}
+
+// factorial(4)
+
+//cal greade prient D when pramiter is 11
+function gradeCal(score){
+     let grade;
+     const scores = [0, 5, 10, 15, 20, 25, 30];
+     const grades = ['F','E','D','C','B','A'];
+      for(let i = 0; i < scores.length; i++){
+      if(score<=scores[i+1] && score>scores[i]){
+        grade = grades[i]
+     }    
+  }
+  return grade;
+}
+
+// const result = gradeCal(11)
+// console.log(result)
