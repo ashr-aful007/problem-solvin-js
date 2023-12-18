@@ -698,3 +698,82 @@ function gradeCal(score){
 
 // const result = gradeCal(11)
 // console.log(result)
+
+
+//case when number 2 - 6 increse 1.
+//10 'j', 'Q', 'k', 'A'  decrse 1
+//when count less than 0 return count spece Bet other Hold
+
+
+//soluation 
+// let count = 0;
+
+function cc(card){
+     switch(card){
+          case 2:
+          case 3:
+          case 4:
+          case 5:
+          case 6:
+          count ++;
+          break;
+          case 10:
+          case 'j':
+          case 'Q':
+          case 'k':
+          case 'A':
+          count --;
+          break;         
+     }
+
+     if(count > 0){
+          return count + 'Bet'
+     }else{
+          return count + 'Hold'
+     }
+}
+
+// cc(2);  cc(A);
+
+
+//another soluation
+
+// let count = 0;
+
+function bb(card){
+     let regex = /[jQKA]/;
+
+     if(card > 1 && card < 7){
+          count ++;
+     }else if(card === 10 || regex.test(card)){
+          count --;
+     }
+
+     if(count > 0) return count + "Bet";
+     return count + "Hold"
+}
+
+
+bb(5)
+
+
+let count = 0
+
+function dd(card){
+       let cardValue 
+     if(typeof card === 'number' || /^\d + $/.test(card)){
+          cardValue = parseInt(card)
+     }else if(['J', 'Q', 'K', '10', 'A'].includes(card)){
+          cardValue = -1
+     }else{
+          cardValue = 1
+     }
+
+     if(count > 0){
+          return `${count} Bet`
+     }else{
+          return `${count} Hold`
+     }
+}
+
+// dd(2)
